@@ -1,0 +1,48 @@
+  
+
+    <div class="container-sm">
+      <div class="mt-5 d-flex col border align-items-center justify-content-center" >       
+        <form  [formGroup]="addForm" noValidate>
+          <div class="row-lg-12">
+              <div class="flex-col-md-6">
+                <label for="nome" class="form-label">Nome <b id="mandatory">*</b></label>
+                <input type="text" formControlName="nome" placeholder="Nome do usuário" name="nome" class="form-control form-control-sm"
+                  id="nome" maxlength="50" >
+                
+              </div>  
+  
+              <div class="flex-col-lg-6">
+                <label for="email" class="form-label">Email <b id="mandatory">*</b></label>
+                <input type="text" formControlName="email" placeholder="Email do Usuário" name="email" class="form-control form-control-sm"
+                  id="email"  >      
+              </div>
+          </div>
+            
+          <div class="row-lg-12">
+                <div class="flex-col-lg-6">
+                  <label for="senha" class="form-label">Senha <b id="mandatory">*</b></label>
+                  <input type="password" formControlName="senha" name="senha" class="form-control form-control-sm"
+                    id="senha" maxlength="20">      
+                </div>
+  
+  
+                <div class="flex-col-lg-6">
+                  <label for="confirmacaoSenha" class="form-label">Confirmação Senha <b id="mandatory">*</b></label>
+                  <input type="password" formControlName="confirmacaoSenha" name="confirmacaoSenha" class="form-control form-control-sm"
+                    id="confirmacaoSenha" maxlength="20" >      
+                </div>
+          </div>
+          <div class="mt-2 mb-2">
+             <!-- <div class="col-lg-6">
+                <button class="btn btn-primary btn-sm"  (click)="cancelar()">Cancelar</button>
+              </div> -->
+          
+              <div class="col-lg-8">
+                <button class="btn btn-primary btn-sm float-right"  (click)="gravar()">Salvar</button>
+              </div>    
+          </div>  
+          
+        </form>
+      </div>
+  </div>
+  
